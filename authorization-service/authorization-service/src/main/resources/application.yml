@@ -1,0 +1,24 @@
+jwt:
+  secret: security
+  validity: 1800
+
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: authorization-Service
+  datasource:
+    driverClassName: org.h2.Driver
+    password: ''
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+#    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
