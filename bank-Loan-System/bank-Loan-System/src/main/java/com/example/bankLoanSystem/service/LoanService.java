@@ -9,4 +9,6 @@ public interface LoanService {
 
 	Loan addLoan(Loan loan);
 
+	List<Loan> getLoans(int userid);
+
 }
