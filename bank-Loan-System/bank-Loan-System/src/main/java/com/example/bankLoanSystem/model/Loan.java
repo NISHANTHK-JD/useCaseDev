@@ -21,8 +21,9 @@ public class Loan {
 	private Date date;
 	private int rateOfInterest;
 	private int durationOfLoan;
+	private int userid;
 
-	public Loan(int loanId, String loanType, long loanAmount, Date date, int rateOfInterest, int durationOfLoan) {
+	public Loan(int loanId, String loanType, long loanAmount, Date date, int rateOfInterest, int durationOfLoan, int userid) {
 		super();
 		this.loanId = loanId;
 		this.loanType = loanType;
@@ -30,6 +31,7 @@ public class Loan {
 		this.date = date;
 		this.rateOfInterest = rateOfInterest;
 		this.durationOfLoan = durationOfLoan;
+		this.userid = userid;
 	}
 
 	public Loan() {
@@ -82,6 +84,14 @@ public class Loan {
 
 	public void setDurationOfLoan(int durationOfLoan) {
 		this.durationOfLoan = durationOfLoan;
+	}
+
+	public int getUserId() {
+		return userid;
+	}
+
+	public void setUserId(int userid) {
+		this.userid = userid;
 	}
 
 	@Override
