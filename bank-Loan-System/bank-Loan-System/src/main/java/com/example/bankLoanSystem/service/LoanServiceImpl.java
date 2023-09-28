@@ -31,5 +31,10 @@ public class LoanServiceImpl implements LoanService{
 		return repo.save(loan);
 	}
 
+	@Override
+	public List<Loan> getLoans(int userid) {
+		return repo.findByUserId(userid);
+	}
+
 
 }
