@@ -34,7 +34,7 @@ public class LoanController {
 		}
 
 		@GetMapping("/getLoans/{uId}")
-		public ResponseEntity<?> getLoans(@RequestBody int uId) throws Exception{
+		public ResponseEntity<?> getLoans(@PathVariable int uId) throws Exception{
 		List<Loan> loans=service.getLoans(uId);
 		return new ResponseEntity<List<Loan>>(loans,HttpStatus.OK);
 	}
