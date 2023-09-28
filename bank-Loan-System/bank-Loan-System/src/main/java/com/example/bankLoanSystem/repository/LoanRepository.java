@@ -7,5 +7,7 @@ import com.example.bankLoanSystem.model.Loan;
 
 @Repository
 public interface LoanRepository  extends JpaRepository<Loan, Integer>{
+
+	public List<Loan> findByUserId(int userid);
 	
 }
