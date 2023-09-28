@@ -32,4 +32,11 @@ public class LoanController {
 		public ResponseEntity<Loan> addLoan(@RequestBody Loan loan) {
 			return new ResponseEntity<>(service.addLoan(loan), HttpStatus.CREATED);
 		}
+
+		@GetMapping("/getLoans/{uId}")
+		public ResponseEntity<?> getLoans(@RequestBody int uId) throws Exception{
+		List<Loan> loans=service.getLoans(uId);
+		return new ResponseEntity<List<Loan>>(loans,HttpStatus.OK);
+	}
+	
 	}
