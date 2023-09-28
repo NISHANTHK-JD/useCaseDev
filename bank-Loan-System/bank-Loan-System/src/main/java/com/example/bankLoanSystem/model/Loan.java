@@ -93,11 +93,7 @@ public class Loan {
 	public void setUserId(int userid) {
 		this.userid = userid;
 	}
-
-	@Override
-	public String toString() {
-		return "Loan [loanId=" + loanId + ", loanType=" + loanType + ", loanAmount=" + loanAmount + ", date=" + date
-				+ ", rateOfInterest=" + rateOfInterest + ", durationOfLoan=" + durationOfLoan + "]";
+// toString to be used.
 	}
 
 }
