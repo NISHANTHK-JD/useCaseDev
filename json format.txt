@@ -1,0 +1,50 @@
+http://localhost:9000/authorization/register
+
+{
+    "name":"kholi",
+    "username": "kholi-18",
+    "password": "vk18as12",
+    "address": "bengaluru",
+    "pan": "E456YUI",
+    "contactNumber": 8908989898,
+    "country": "IND",
+    "email": "vk@gmail.com",
+    "accounttype": "Savings",
+    "dob":""
+}
+
+
+
+http://localhost:9000/authorization/login
+
+{
+    "username": "kholi-18",
+    "password": "vk18as12"
+}
+
+
+http://localhost:9000/users/update/1
+
+{
+    "name":"kholi",
+    "username": "kholi-18",
+    "password": "vk18as12",
+    "address": "bengaluru",
+    "pan": "E456YUI",
+    "contactNumber": 8908989898,
+    "country": "IND",
+    "email": "vk@gmail.com",
+    "accounttype": "Savings",
+    "dob":""
+}
+
+http://localhost:9000/loan/getloans/1
+
+{
+	"loanType": "personal",
+	"loanAmount": 200000,
+	"date":"2021-10-12",
+	"rateOfInterest": 12,
+	"durationOfLoan": 2,
+	"userid": 1
+}
